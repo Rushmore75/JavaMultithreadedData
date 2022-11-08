@@ -12,10 +12,7 @@ for i in range(0, 4):
 
     csv_file = dir+file.format(i);
     with open(csv_file, encoding="utf8") as f:
-        csv_reader = csv.reader(f)
-        # skip the header
-        next(csv_reader)
-        
+        csv_reader = csv.reader(f)        
         for line in csv_reader:
             x_threads.append(float(line[1]))
             y_time.append(float(line[3]))

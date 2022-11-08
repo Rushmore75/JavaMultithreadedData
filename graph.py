@@ -1,4 +1,3 @@
-# importing the required module
 import matplotlib.pyplot as plt
 import csv
 import os
@@ -16,7 +15,7 @@ for i in range(0, 4):
         csv_reader = csv.reader(f)
         # skip the header
         next(csv_reader)
-        # calculate total
+        
         for line in csv_reader:
             x_threads.append(float(line[1]))
             y_time.append(float(line[3]))
